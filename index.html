@@ -241,7 +241,7 @@
           <button onclick="switchLang('pt')" id="lang-pt-btn" class="px-3 py-1 rounded-full bg-yellow-500 text-slate-950 font-medium">PT</button>
           <button onclick="switchLang('en')" id="lang-en-btn" class="px-3 py-1 rounded-full text-slate-400 hover:text-slate-200">EN</button>
         </div>
-        <a href="docs/Iva_Martins_Resume_EN.pdf" target="_blank" rel="noopener"
+        <a href="#" data-cv-link
            class="hidden sm:inline-flex items-center px-4 py-2 rounded-full bg-yellow-400 text-slate-950 text-sm font-semibold hover:bg-yellow-300 transition-all">
           <i class="fa-solid fa-download mr-2"></i>
           <span class="lang-pt">CV (PDF)</span>
@@ -276,11 +276,11 @@
 
           <!-- CTAs -->
           <div class="flex flex-wrap gap-3 mb-8">
-            <a href="docs/Iva_Martins_Resume_EN.pdf" target="_blank" rel="noopener"
+            <a href="#" data-cv-link
                class="inline-flex items-center justify-center gap-x-2 px-7 h-12 rounded-2xl bg-yellow-400 hover:bg-yellow-300 active:bg-yellow-500 text-slate-950 font-semibold transition-all">
               <i class="fa-solid fa-download"></i>
-              <span class="lang-pt">Baixar CV (EN)</span>
-              <span class="lang-en">Download CV (EN)</span>
+              <span class="lang-pt">Baixar CV</span>
+              <span class="lang-en">Download CV</span>
             </a>
 
             <a href="https://www.linkedin.com/in/ivã-martins-71760b89/" target="_blank" rel="noopener"
@@ -1141,27 +1141,25 @@
       </a>
     </div>
 
-    <!-- Download CV -->
+    <!-- Download CV (language-aware) -->
     <div class="mt-8 card p-6 text-center">
       <div class="text-xs uppercase tracking-widest text-yellow-400 mb-2">DOWNLOAD CV</div>
       <p class="text-sm text-slate-400 mb-4 lang-pt">Versão completa do currículo, com Cover Letter, em PDF.</p>
       <p class="text-sm text-slate-400 mb-4 lang-en">Full resume version, with cover letter, in PDF.</p>
       <div class="flex flex-wrap justify-center gap-3">
-        <a href="docs/Iva_Martins_Resume_EN.pdf" target="_blank" rel="noopener"
+        <a href="#" data-cv-link target="_blank" rel="noopener"
            class="inline-flex items-center gap-x-2 px-5 h-11 rounded-full bg-yellow-400 text-slate-950 font-semibold hover:bg-yellow-300 transition">
-          <i class="fa-solid fa-download"></i> Resume (EN)
+          <i class="fa-solid fa-download"></i>
+          <span class="lang-pt">Currículo (PT)</span>
+          <span class="lang-en">Resume (EN)</span>
         </a>
-        <a href="docs/Iva_Martins_Cover_Letter_EN.pdf" target="_blank" rel="noopener"
+        <a href="#" data-cover-letter-link target="_blank" rel="noopener"
            class="inline-flex items-center gap-x-2 px-5 h-11 rounded-full border border-slate-700 hover:bg-slate-800 transition">
-          <i class="fa-solid fa-file-lines"></i> Cover Letter (EN)
+          <i class="fa-solid fa-file-lines"></i>
+          <span class="lang-pt">Carta (PT)</span>
+          <span class="lang-en">Cover Letter (EN)</span>
         </a>
-        <a href="docs/Iva_Martins_Curriculo_PT.pdf" target="_blank" rel="noopener"
-           class="inline-flex items-center gap-x-2 px-5 h-11 rounded-full border border-slate-700 hover:bg-slate-800 transition">
-          <i class="fa-solid fa-file-lines"></i> Currículo (PT)
-        </a>
-        <a href="docs/Iva_Martins_Carta_Apresentacao_PT.pdf" target="_blank" rel="noopener"
-           class="inline-flex items-center gap-x-2 px-5 h-11 rounded-full border border-slate-700 hover:bg-slate-800 transition">
-          <i class="fa-solid fa-file-lines"></i> Carta (PT)
+      </div>
         </a>
       </div>
     </div>
@@ -1209,6 +1207,16 @@
         ptBtn.classList.remove('bg-yellow-500', 'text-slate-950');
         ptBtn.classList.add('text-slate-400');
       }
+
+      // Language-aware download links
+      const cvFile = lang === 'pt'
+        ? 'docs/Iva_Martins_Curriculo_PT.pdf'
+        : 'docs/Iva_Martins_Resume_EN.pdf';
+      const clFile = lang === 'pt'
+        ? 'docs/Iva_Martins_Carta_Apresentacao_PT.pdf'
+        : 'docs/Iva_Martins_Cover_Letter_EN.pdf';
+      document.querySelectorAll('[data-cv-link]').forEach(a => a.setAttribute('href', cvFile));
+      document.querySelectorAll('[data-cover-letter-link]').forEach(a => a.setAttribute('href', clFile));
     }
 
     function switchLang(lang) {
