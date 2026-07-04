@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Ivã Martins — Senior Java Backend Engineer | Open to Senior Backend / Tech Lead opportunities (Remote, BR/US/EU)</title>
+  <meta name="description" content="Senior Java Backend Engineer with 20+ years designing, developing, and modernizing large-scale systems, high-volume APIs, microservices, and event-driven architectures. Java, Spring Boot, Scala, Kafka, Flink, Akka, Azure, AWS. AI-Driven Development (LangChain4j, RAG, MCP). Open to remote opportunities.">
+  <meta name="author" content="Ivã Martins">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ivamartins.github.io/">
+
+  <!-- Bilingual hreflang -->
+  <link rel="alternate" hreflang="pt-BR" href="https://ivamartins.github.io/">
+  <link rel="alternate" hreflang="en" href="https://ivamartins.github.io/">
+  <link rel="alternate" hreflang="x-default" href="https://ivamartins.github.io/">
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ivã Martins — Senior Java Backend Engineer · Open to opportunities">
+  <meta property="og:description" content="20+ years building and modernizing enterprise backends. Java, Spring Boot, Scala, Kafka, Flink, Akka, Azure, AWS. AI-Driven Development. Open to remote Senior Backend / Tech Lead roles.">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:url" content="https://ivamartins.github.io/">
+  <meta property="profile:first_name" content="Ivã">
+  <meta property="profile:last_name" content="Martins">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ivã Martins — Senior Java Backend Engineer · Open to opportunities">
+  <meta name="twitter:description" content="20+ years Java/Spring Boot/Scala/Kafka. Open to Senior Backend / Tech Lead remote roles (BR/US/EU).">
+
+  <!-- Tailwind + Font Awesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+    :root {
+      --accent: 234 179 8;       /* yellow-400 */
+      --accent-emerald: 16 185 129;
+      --accent-blue: 96 165 250;
+    }
+
+    .font-display { font-family: 'Space Grotesk', system-ui, sans-serif; }
+    .font-mono    { font-family: 'JetBrains Mono', monospace; }
+
+    .section-title {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+    }
+
+    .lang-en { display: none; }
+    html[lang="en"] .lang-pt { display: none; }
+    html[lang="en"] .lang-en { display: block; }
+
+    .nav-link { transition: color 0.2s; }
+    html[lang="en"] .nav-link { color: rgb(226 232 240); }
+    .nav-link:hover { color: rgb(234 179 8); }
+
+    .card {
+      background-color: rgb(2 6 23);
+      border: 1px solid rgb(30 41 59);
+      border-radius: 1.5rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgb(71 85 105);
+    }
+
+    .card-highlight {
+      border-color: rgb(234 179 8 / 0.4);
+      box-shadow: 0 0 0 1px rgb(234 179 8 / 0.1);
+    }
+
+    .tech-pill {
+      background-color: rgb(15 23 42);
+      color: rgb(226 232 240);
+      font-size: 0.75rem;
+      padding: 0.125rem 0.625rem;
+      border-radius: 9999px;
+      font-weight: 500;
+      border: 1px solid rgb(30 41 59);
+    }
+
+    /* Skills Matrix */
+    .skill-row { display: flex; align-items: center; gap: 0.75rem; padding: 0.625rem 0; border-bottom: 1px solid rgb(30 41 59); }
+    .skill-row:last-child { border-bottom: 0; }
+    .skill-name { flex: 0 0 180px; font-size: 0.875rem; color: rgb(226 232 240); }
+    .skill-bar { flex: 1; height: 6px; background: rgb(30 41 59); border-radius: 9999px; overflow: hidden; }
+    .skill-bar-fill { height: 100%; background: linear-gradient(90deg, rgb(234 179 8) 0%, rgb(250 204 21) 100%); border-radius: 9999px; }
+    .skill-years { flex: 0 0 90px; font-size: 0.75rem; color: rgb(148 163 184); text-align: right; font-family: 'JetBrains Mono', monospace; }
+
+    /* Tech Radar */
+    .radar-quad { padding: 1rem; border-radius: 1rem; }
+    .radar-adopt   { background: rgb(20 83 45 / 0.3); border: 1px solid rgb(34 197 94 / 0.3); }
+    .radar-trial   { background: rgb(113 63 18 / 0.3); border: 1px solid rgb(234 179 8 / 0.3); }
+    .radar-assess  { background: rgb(30 58 138 / 0.3); border: 1px solid rgb(96 165 250 / 0.3); }
+    .radar-hold    { background: rgb(127 29 29 / 0.3); border: 1px solid rgb(239 68 68 / 0.3); }
+
+    /* Timeline */
+    .tl-track {
+      position: relative;
+      padding: 0;
+    }
+    .tl-track::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, rgb(234 179 8 / 0.6) 0%, rgb(30 41 59) 100%);
+      transform: translateX(-50%);
+    }
+    .tl-item {
+      position: relative;
+      padding: 1rem 0;
+      width: 50%;
+    }
+    .tl-item.left  { padding-right: 2.5rem; text-align: right; }
+    .tl-item.right { margin-left: 50%; padding-left: 2.5rem; }
+    .tl-item::before {
+      content: '';
+      position: absolute;
+      top: 1.5rem;
+      width: 14px; height: 14px;
+      background: rgb(234 179 8);
+      border: 3px solid rgb(2 6 23);
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .tl-item.left::before  { right: -7px; }
+    .tl-item.right::before { left: -7px; }
+
+    @media (max-width: 768px) {
+      .tl-track::before { left: 8px; }
+      .tl-item { width: 100%; padding-left: 2.5rem !important; padding-right: 0 !important; text-align: left !important; margin-left: 0 !important; }
+      .tl-item::before { left: 1px; right: auto !important; }
+    }
+
+    /* Pulse dot */
+    @keyframes pulse-ring {
+      0% { box-shadow: 0 0 0 0 rgb(16 185 129 / 0.5); }
+      70% { box-shadow: 0 0 0 8px rgb(16 185 129 / 0); }
+      100% { box-shadow: 0 0 0 0 rgb(16 185 129 / 0); }
+    }
+    .pulse-ring { animation: pulse-ring 2s infinite; }
+  </style>
+
+  <!-- Structured Data: Person + WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ivã Martins",
+    "jobTitle": "Senior Java Backend Engineer",
+    "url": "https://ivamartins.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/ivã-martins-71760b89",
+      "https://github.com/ivamartins"
+    ],
+    "email": "mailto:ivamartins@gmail.com",
+    "telephone": "+55-51-98115-1474",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Porto Alegre",
+      "addressRegion": "RS",
+      "addressCountry": "BR"
+    },
+    "alumniOf": [
+      { "@type": "EducationalOrganization", "name": "Universidade Luterana do Brasil (ULBRA)" },
+      { "@type": "EducationalOrganization", "name": "Uniritter" },
+      { "@type": "EducationalOrganization", "name": "Universidade Pitágoras Unopar Anhanguera" }
+    ],
+    "knowsAbout": [
+      "Java", "Spring Boot", "Scala", "Apache Kafka", "Apache Flink", "Akka",
+      "Microsoft Azure", "AWS", "Microservices", "Event-Driven Architecture",
+      "LangChain4j", "RAG", "MCP", "AI Agents", "Distributed Systems"
+    ],
+    "worksFor": { "@type": "Organization", "name": "Open to opportunities" }
+  }
+  </script>
+</head>
+
+<body class="bg-slate-950 text-slate-200 antialiased">
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-x-2">
+        <div class="w-8 h-8 rounded-lg bg-yellow-400 text-slate-950 flex items-center justify-center font-display font-bold">IM</div>
+        <div class="leading-tight">
+          <div class="font-display font-semibold tracking-tight">Ivã Martins</div>
+          <div class="text-[10px] text-slate-500 -mt-0.5 lang-pt">Engenheiro Backend Sênior</div>
+          <div class="text-[10px] text-slate-500 -mt-0.5 lang-en">Senior Backend Engineer</div>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-x-6 text-sm">
+        <a href="#sobre" class="nav-link lang-pt">Sobre</a>
+        <a href="#sobre" class="nav-link lang-en">About</a>
+        <a href="#carreira" class="nav-link lang-pt">Carreira</a>
+        <a href="#carreira" class="nav-link lang-en">Career</a>
+        <a href="#skills" class="nav-link lang-pt">Skills</a>
+        <a href="#skills" class="nav-link lang-en">Skills</a>
+        <a href="#cases" class="nav-link">Cases</a>
+        <a href="#open-source" class="nav-link lang-pt">Open Source</a>
+        <a href="#open-source" class="nav-link lang-en">Open Source</a>
+        <a href="#contato" class="nav-link lang-pt">Contato</a>
+        <a href="#contato" class="nav-link lang-en">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-x-3">
+        <div class="flex items-center bg-slate-900 border border-slate-800 rounded-full p-1 text-xs">
+          <button onclick="switchLang('pt')" id="lang-pt-btn" class="px-3 py-1 rounded-full bg-yellow-500 text-slate-950 font-medium">PT</button>
+          <button onclick="switchLang('en')" id="lang-en-btn" class="px-3 py-1 rounded-full text-slate-400 hover:text-slate-200">EN</button>
+        </div>
+        <a href="docs/Iva_Martins_Resume_EN.pdf" target="_blank" rel="noopener"
+           class="hidden sm:inline-flex items-center px-4 py-2 rounded-full bg-yellow-400 text-slate-950 text-sm font-semibold hover:bg-yellow-300 transition-all">
+          <i class="fa-solid fa-download mr-2"></i>
+          <span class="lang-pt">CV (PDF)</span>
+          <span class="lang-en">CV (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header id="top" class="relative">
+    <div class="max-w-7xl mx-auto px-6 pt-14 pb-20 md:pt-20 md:pb-24">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+
+        <div class="md:col-span-7">
+          <!-- Status badge -->
+          <div class="inline-flex items-center gap-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs tracking-[1px] mb-6">
+            <div class="w-2 h-2 bg-emerald-400 rounded-full pulse-ring"></div>
+            <span class="text-emerald-300 lang-pt">DISPONÍVEL PARA OPORTUNIDADES REMOTAS — SÊNIOR / TECH LEAD</span>
+            <span class="text-emerald-300 lang-en">OPEN TO REMOTE OPPORTUNITIES — SENIOR / TECH LEAD</span>
+          </div>
+
+          <h1 class="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tighter font-semibold mb-6">
+            <span class="lang-pt">20+ anos<br>construindo backends<br>que escalam.</span>
+            <span class="lang-en">20+ years building<br>backends that scale.</span>
+          </h1>
+
+          <p class="max-w-2xl text-lg md:text-xl text-slate-400 mb-8 leading-relaxed">
+            <span class="lang-pt"><strong class="text-white">Senior Java Backend Engineer</strong> com profundidade real em microsserviços, arquiteturas event-driven, cloud (Azure/AWS) e modernização de legados. Atualmente focado em <strong class="text-white">AI-Driven Development</strong> com LangChain4j, RAG e agentes.</span>
+            <span class="lang-en"><strong class="text-white">Senior Java Backend Engineer</strong> with real depth in microservices, event-driven architectures, cloud (Azure/AWS), and legacy modernization. Currently focused on <strong class="text-white">AI-Driven Development</strong> with LangChain4j, RAG, and agents.</span>
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap gap-3 mb-8">
+            <a href="docs/Iva_Martins_Resume_EN.pdf" target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-x-2 px-7 h-12 rounded-2xl bg-yellow-400 hover:bg-yellow-300 active:bg-yellow-500 text-slate-950 font-semibold transition-all">
+              <i class="fa-solid fa-download"></i>
+              <span class="lang-pt">Baixar CV (EN)</span>
+              <span class="lang-en">Download CV (EN)</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ivã-martins-71760b89/" target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-blue-600 hover:bg-blue-950/30 text-blue-400 font-medium transition-all">
+              <i class="fa-brands fa-linkedin text-lg"></i>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:ivamartins@gmail.com"
+               class="inline-flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-slate-700 hover:bg-slate-900 text-sm font-medium transition-all">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="lang-pt">Email</span>
+              <span class="lang-en">Email</span>
+            </a>
+          </div>
+
+          <!-- Quick facts -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+            <div>
+              <div class="text-2xl font-display font-semibold text-white">20+</div>
+              <div class="text-xs text-slate-500 lang-pt">anos de carreira</div>
+              <div class="text-xs text-slate-500 lang-en">years of experience</div>
+            </div>
+            <div>
+              <div class="text-2xl font-display font-semibold text-white">7</div>
+              <div class="text-xs text-slate-500 lang-pt">empresas</div>
+              <div class="text-xs text-slate-500 lang-en">companies</div>
+            </div>
+            <div>
+              <div class="text-2xl font-display font-semibold text-white">4</div>
+              <div class="text-xs text-slate-500 lang-pt">setores (fin/e-com/saúde/mídia)</div>
+              <div class="text-xs text-slate-500 lang-en">industries (fin/ecom/health/media)</div>
+            </div>
+            <div>
+              <div class="text-2xl font-display font-semibold text-white">UTC-3</div>
+              <div class="text-xs text-slate-500 lang-pt">BR — sobrepõe US/EU</div>
+              <div class="text-xs text-slate-500 lang-en">BR — overlaps US/EU</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: portrait -->
+        <div class="md:col-span-5 relative">
+          <div class="aspect-[4/5] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl shadow-black/40">
+            <img src="assets/portrait.jpg" alt="Ivã Martins — Senior Java Backend Engineer" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Floating card: location -->
+          <div class="absolute -bottom-4 -left-4 bg-slate-900 border border-slate-700 rounded-2xl px-5 py-3 text-sm shadow-xl hidden md:block">
+            <div class="flex items-center gap-x-3">
+              <div class="text-yellow-400"><i class="fa-solid fa-location-dot fa-lg"></i></div>
+              <div>
+                <div class="text-xs text-slate-400 lang-pt">Base</div>
+                <div class="text-xs text-slate-400 lang-en">Based in</div>
+                <div class="font-medium">Porto Alegre, BR</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating card: notice -->
+          <div class="absolute -top-4 -right-4 bg-slate-900 border border-slate-700 rounded-2xl px-5 py-3 text-sm shadow-xl hidden md:block">
+            <div class="flex items-center gap-x-3">
+              <div class="text-emerald-400"><i class="fa-solid fa-clock fa-lg"></i></div>
+              <div>
+                <div class="text-xs text-slate-400 lang-pt">Notice</div>
+                <div class="text-xs text-slate-400 lang-en">Notice</div>
+                <div class="font-medium lang-pt">30 dias</div>
+                <div class="font-medium lang-en">30 days</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== TRUST BAR ===================== -->
+  <div class="border-y border-slate-800 bg-slate-900/50">
+    <div class="max-w-7xl mx-auto px-6 py-5">
+      <div class="flex flex-wrap justify-center md:justify-between items-center gap-x-8 gap-y-3 text-sm text-slate-400">
+        <div class="flex items-center gap-x-2"><span class="font-semibold text-white">Sicredi</span> · arquitetura de plataforma</div>
+        <div class="hidden md:block w-px h-3 bg-slate-700"></div>
+        <div class="flex items-center gap-x-2"><span class="font-semibold text-white">Panvel</span> · reescrita completa do e-commerce</div>
+        <div class="hidden md:block w-px h-3 bg-slate-700"></div>
+        <div class="flex items-center gap-x-2"><span class="font-semibold text-white">Quartile (US)</span> · 5 anos · Azure</div>
+        <div class="hidden md:block w-px h-3 bg-slate-700"></div>
+        <div class="flex items-center gap-x-2"><span class="font-semibold text-white">CIEE</span> · 5 anos · plataforma de alto tráfego</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="sobre" class="max-w-7xl mx-auto px-6 pt-20 pb-16">
+    <div class="grid md:grid-cols-12 gap-x-12 gap-y-10">
+      <div class="md:col-span-4">
+        <div class="sticky top-24">
+          <div class="uppercase text-xs tracking-[2px] text-yellow-400 mb-2 lang-pt">SOBRE MIM</div>
+          <div class="uppercase text-xs tracking-[2px] text-yellow-400 mb-2 lang-en">ABOUT ME</div>
+          <h2 class="section-title tracking-tighter mb-6">
+            <span class="lang-pt">Senior Backend<br>com profundidade<br>real.</span>
+            <span class="lang-en">Senior Backend<br>with real depth.</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="md:col-span-8 text-[15px] leading-relaxed text-slate-300 space-y-5">
+        <p class="lang-pt">
+          Olá, sou <strong class="text-white">Ivã Martins</strong>. Engenheiro Backend Sênior com mais de <strong class="text-white">20 anos</strong> projetando, desenvolvendo e modernizando sistemas backend de larga escala, APIs de alto volume, microsserviços e plataformas corporativas — nos setores financeiro, e-commerce, saúde e marketing digital.
+        </p>
+        <p class="lang-en">
+          Hi, I'm <strong class="text-white">Ivã Martins</strong>. Senior Backend Engineer with <strong class="text-white">20+ years</strong> designing, developing, and modernizing large-scale backend systems, high-volume APIs, microservices, and enterprise platforms — across finance, e-commerce, healthcare, and digital marketing.
+        </p>
+
+        <p class="lang-pt">
+          No <strong class="text-white">Sicredi</strong> (uma das maiores instituições financeiras cooperativas do Brasil), atuei como principal engenheiro na evolução de uma prova de conceito em Python para uma arquitetura event-driven de produção com Scala, Akka, Apache Flink, Kafka e MongoDB — solução que serviu como referência para outras iniciativas do Sicredi Digital. Na <strong class="text-white">Panvel</strong> (uma das maiores redes de farmácias do Brasil), contribuí para a reescrita completa do backend do e-commerce em Java, liderei a adoção de Scrum e entreguei a primeira versão mobile. Mais recentemente, na <strong class="text-white">Quartile</strong> (EUA), construí e mantive backends de alto volume com C# e Python em Azure Functions, com integrações assíncronas via Service Bus e uso intenso de Claude/ChatGPT em todo o ciclo de desenvolvimento.
+        </p>
+        <p class="lang-en">
+          At <strong class="text-white">Sicredi</strong> (one of Brazil's largest cooperative financial institutions), I acted as the main engineer behind the evolution of a Python POC into a production event-driven architecture with Scala, Akka, Apache Flink, Kafka, and MongoDB — a solution that served as the reference for other Sicredi Digital initiatives. At <strong class="text-white">Panvel</strong> (one of Brazil's largest pharmacy chains), I contributed to the full Java backend rewrite of the e-commerce platform, led Scrum adoption, and delivered the first mobile e-commerce version. More recently, at <strong class="text-white">Quartile</strong> (US), I built and maintained high-volume backends in C# and Python on Azure Functions, with Service Bus async integrations and heavy use of Claude/ChatGPT across the development lifecycle.
+        </p>
+
+        <p class="lang-pt">
+          Hoje estou expandindo meu foco em <strong class="text-white">AI-Driven Development</strong> através do uso prático de ferramentas de IA e de uma pós-graduação em <strong class="text-white">Engenharia Java aplicada à IA</strong> (LangChain4j, RAG, MCP, agentes). Busco oportunidades sênior em Java backend com potencial de crescimento para Tech Lead.
+        </p>
+        <p class="lang-en">
+          Today I'm expanding my focus into <strong class="text-white">AI-Driven Development</strong> through hands-on use of AI tools and a postgraduate program in <strong class="text-white">Java Engineering applied to AI</strong> (LangChain4j, RAG, MCP, agents). I'm looking for senior Java backend roles with growth potential toward Tech Lead.
+        </p>
+
+        <div class="pt-4 border-t border-slate-800">
+          <div class="grid sm:grid-cols-3 gap-4 text-sm">
+            <div>
+              <div class="text-slate-500 text-xs uppercase tracking-wider mb-1 lang-pt">Inglês</div>
+              <div class="text-slate-500 text-xs uppercase tracking-wider mb-1 lang-en">English</div>
+              <div class="text-white font-medium">C1 — Professional working</div>
+              <div class="text-xs text-slate-500">Site bilíngue • calls globais na Quartile</div>
+            </div>
+            <div>
+              <div class="text-slate-500 text-xs uppercase tracking-wider mb-1 lang-pt">Modelo</div>
+              <div class="text-slate-500 text-xs uppercase tracking-wider mb-1 lang-en">Engagement</div>
+              <div class="text-white font-medium lang-pt">CLT ou Contrato (PJ)</div>
+              <div class="text-white font-medium lang-en">Full-time or Contract (PJ)</div>
+            </div>
+            <div>
+              <div class="text-slate-500 text-xs uppercase tracking-wider mb-1 lang-pt">Localização</div>
+              <div class="text-slate-500 text-xs uppercase tracking-wider mb-1 lang-en">Location</div>
+              <div class="text-white font-medium">Remote — BR/US/EU</div>
+              <div class="text-xs text-slate-500">UTC-3 · overlap completo com US-East</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAREER TIMELINE ===================== -->
+  <section id="carreira" class="bg-slate-900 border-y border-slate-800 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-pt">CARREIRA</div>
+        <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-en">CAREER</div>
+        <h3 class="section-title tracking-tighter mt-2">
+          <span class="lang-pt">20+ anos em uma linha do tempo</span>
+          <span class="lang-en">20+ years on a timeline</span>
+        </h3>
+      </div>
+
+      <div class="tl-track">
+        <!-- 2021-2026 Quartile (US) -->
+        <div class="tl-item left">
+          <div class="text-xs text-emerald-400 font-mono mb-1">2021 — 2026</div>
+          <div class="font-semibold text-white">Quartile <span class="text-xs text-slate-500 font-normal lang-pt">(EUA, remoto)</span><span class="text-xs text-slate-500 font-normal lang-en">(US, remote)</span></div>
+          <div class="text-xs text-slate-400">Senior Backend Engineer</div>
+          <div class="text-xs text-slate-500 mt-1">C# · Python · Azure · Claude/ChatGPT</div>
+        </div>
+        <div class="tl-item right"></div>
+
+        <!-- 2014-2021 SoftDesign -->
+        <div class="tl-item right">
+          <div class="text-xs text-emerald-400 font-mono mb-1">2014 — 2021</div>
+          <div class="font-semibold text-white">SoftDesign <span class="text-xs text-slate-500 font-normal">(Sicredi · Panvel · AutoDB · Horus Clinic)</span></div>
+          <div class="text-xs text-slate-400">Senior Java | Scala Engineer</div>
+          <div class="text-xs text-slate-500 mt-1">Java 8 · Scala · Akka · Flink · Kafka</div>
+        </div>
+        <div class="tl-item left"></div>
+
+        <!-- 2012-2014 Panvel -->
+        <div class="tl-item left">
+          <div class="text-xs text-emerald-400 font-mono mb-1">2012 — 2014</div>
+          <div class="font-semibold text-white">TechnoCorp / Panvel (Grupo Dimed)</div>
+          <div class="text-xs text-slate-400">Senior Java Engineer · Scrum Master</div>
+          <div class="text-xs text-slate-500 mt-1">Java 7 · Spring · JSF · JBoss</div>
+        </div>
+        <div class="tl-item right"></div>
+
+        <!-- 2007-2012 CIEE -->
+        <div class="tl-item right">
+          <div class="text-xs text-emerald-400 font-mono mb-1">2007 — 2012</div>
+          <div class="font-semibold text-white">CWI Software · CIEE-RS</div>
+          <div class="text-xs text-slate-400">Java Engineer</div>
+          <div class="text-xs text-slate-500 mt-1">Struts · Spring · Hibernate · Ingres</div>
+        </div>
+        <div class="tl-item left"></div>
+
+        <!-- 2006-2007 MSDevelop -->
+        <div class="tl-item left">
+          <div class="text-xs text-emerald-400 font-mono mb-1">2006 — 2007</div>
+          <div class="font-semibold text-white">MSDevelop · Sicredi</div>
+          <div class="text-xs text-slate-400">Java Engineer · Oracle FLEXCUBE</div>
+          <div class="text-xs text-slate-500 mt-1">Java 5 · JSF · Oracle</div>
+        </div>
+        <div class="tl-item right"></div>
+
+        <!-- 2005-2006 Intelly -->
+        <div class="tl-item right">
+          <div class="text-xs text-emerald-400 font-mono mb-1">2005 — 2006</div>
+          <div class="font-semibold text-white">Intelly</div>
+          <div class="text-xs text-slate-400">Java Engineer</div>
+          <div class="text-xs text-slate-500 mt-1">Struts · JasperReports</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED CASES ===================== -->
+  <section id="cases" class="max-w-7xl mx-auto px-6 py-20">
+    <div class="text-center mb-12">
+      <div class="uppercase text-xs tracking-[2px] text-yellow-400">CASES DE DESTAQUE</div>
+      <h3 class="section-title tracking-tighter mt-2">
+        <span class="lang-pt">Onde entreguei impacto</span>
+        <span class="lang-en">Where I delivered impact</span>
+      </h3>
+      <p class="text-slate-400 mt-2 max-w-2xl mx-auto text-sm lang-pt">Três projetos que mostram senioridade técnica + impacto mensurável.</p>
+      <p class="text-slate-400 mt-2 max-w-2xl mx-auto text-sm lang-en">Three projects showing technical seniority + measurable impact.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- Quartile -->
+      <div class="card p-7">
+        <div class="flex items-center gap-x-2 mb-3">
+          <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">2021—2026</span>
+          <span class="text-xs text-slate-500">Quartile (US, remote)</span>
+        </div>
+        <h4 class="font-semibold text-xl mb-3 lang-pt">Plataforma de retail media com IA em produção</h4>
+        <h4 class="font-semibold text-xl mb-3 lang-en">AI-powered retail media platform in production</h4>
+
+        <ul class="text-sm text-slate-300 space-y-2 mb-5">
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Backends de <strong class="text-white">alto volume</strong> em C#/.NET 6/7/8 e Python no Azure Functions para a plataforma de otimização de anúncios da Quartile.</span><span class="lang-en">High-volume backends in C#/.NET 6/7/8 and Python on Azure Functions for Quartile's ad optimization platform.</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Integrações assíncronas com <strong class="text-white">Azure Service Bus</strong> para processamento de dados, automações, otimização, rotulagem e geração de produtos.</span><span class="lang-en">Async integrations with Azure Service Bus for data processing, automations, optimization, labeling, and product generation.</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Stored procedures T-SQL complexas para regras de negócio, promoções e operações de alto volume.</span><span class="lang-en">Complex T-SQL stored procedures for business rules, promotions, and high-volume operations.</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Integrações de portal de clientes via <strong class="text-white">OpenAPI</strong>.</span><span class="lang-en">Customer portal integrations via OpenAPI.</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Uso intenso de <strong class="text-white">Claude + ChatGPT</strong> em todo o ciclo de desenvolvimento.</span><span class="lang-en">Heavy use of Claude + ChatGPT across the entire development lifecycle.</span></li>
+        </ul>
+
+        <div class="flex flex-wrap gap-1.5">
+          <span class="tech-pill text-[10px]">C# / .NET 6/7/8</span>
+          <span class="tech-pill text-[10px]">Python · FastAPI</span>
+          <span class="tech-pill text-[10px]">Azure Functions</span>
+          <span class="tech-pill text-[10px]">Service Bus</span>
+          <span class="tech-pill text-[10px]">SQL Server · T-SQL</span>
+          <span class="tech-pill text-[10px]">OpenAPI</span>
+          <span class="tech-pill text-[10px]">Claude · ChatGPT</span>
+        </div>
+      </div>
+
+      <!-- Sicredi -->
+      <div class="card p-7">
+        <div class="flex items-center gap-x-2 mb-3">
+          <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">2017—2021</span>
+          <span class="text-xs text-slate-500">Sicredi · via SoftDesign</span>
+        </div>
+        <h4 class="font-semibold text-xl mb-3 lang-pt">Pivot arquitetural que virou padrão da plataforma</h4>
+        <h4 class="font-semibold text-xl mb-3 lang-en">Architectural pivot that became the platform standard</h4>
+
+        <ul class="text-sm text-slate-300 space-y-2 mb-5">
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Liderei a evolução de um POC em Python para uma arquitetura <strong class="text-white">event-driven</strong> completa com Scala + Akka + Flink + Kafka + MongoDB.</span><span class="lang-en">Led the evolution of a Python POC into a full event-driven architecture with Scala + Akka + Flink + Kafka + MongoDB.</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Processamento financeiro em <strong class="text-white">tempo real</strong> com alto volume, reprocessamento seguro e integridade forte.</span><span class="lang-en">Real-time financial processing with high volume, safe reprocessing, and strong integrity.</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Solução adotada como <strong class="text-white">arquitetura de referência</strong> para outras iniciativas do Sicredi Digital.</span><span class="lang-en">Solution adopted as the reference architecture for other Sicredi Digital initiatives.</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">BFFs em Java 8 + Kotlin para Conta Corrente e Poupança, com Kafka e Oracle.</span><span class="lang-en">BFFs in Java 8 + Kotlin for Checking and Savings accounts, with Kafka and Oracle.</span></li>
+        </ul>
+
+        <div class="flex flex-wrap gap-1.5">
+          <span class="tech-pill text-[10px]">Scala · Akka</span>
+          <span class="tech-pill text-[10px]">Apache Flink</span>
+          <span class="tech-pill text-[10px]">Apache Kafka</span>
+          <span class="tech-pill text-[10px]">MongoDB · Oracle</span>
+          <span class="tech-pill text-[10px]">Java 8 · Kotlin</span>
+          <span class="tech-pill text-[10px]">Event-Driven</span>
+        </div>
+      </div>
+
+      <!-- Panvel -->
+      <div class="card p-7">
+        <div class="flex items-center gap-x-2 mb-3">
+          <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">2012—2014</span>
+          <span class="text-xs text-slate-500">Panvel · Grupo Dimed</span>
+        </div>
+        <h4 class="font-semibold text-xl mb-3 lang-pt">Reescrita do e-commerce + 1ª versão mobile</h4>
+        <h4 class="font-semibold text-xl mb-3 lang-en">E-commerce rewrite + first mobile version</h4>
+
+        <ul class="text-sm text-slate-300 space-y-2 mb-5">
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Contribuí para a <strong class="text-white">reescrita completa do backend</strong> Java do e-commerce Panvel, preservando regras de negócio críticas.</span><span class="lang-en">Contributed to the full Java backend rewrite of Panvel's e-commerce, preserving critical business rules.</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Liderei a <strong class="text-white">adoção de Scrum</strong> e entreguei a primeira versão mobile do e-commerce (PrimeFaces Mobile).</span><span class="lang-en">Led Scrum adoption and delivered the first mobile e-commerce version (PrimeFaces Mobile).</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Migração de legados para JSF e de <strong class="text-white">WebSphere → JBoss</strong>.</span><span class="lang-en">Migration of legacy systems to JSF and from WebSphere to JBoss.</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Foco em <strong class="text-white">performance, escalabilidade</strong> e alto volume de transações omnichannel.</span><span class="lang-en">Focus on performance, scalability, and high-volume omnichannel transactions.</span></li>
+        </ul>
+
+        <div class="flex flex-wrap gap-1.5">
+          <span class="tech-pill text-[10px]">Java 7</span>
+          <span class="tech-pill text-[10px]">Spring · Hibernate</span>
+          <span class="tech-pill text-[10px]">JSF · PrimeFaces</span>
+          <span class="tech-pill text-[10px]">JBoss · WebSphere</span>
+          <span class="tech-pill text-[10px]">Scrum Master</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center text-xs text-slate-500 mt-8 lang-pt">+ CIEE (5 anos, plataforma de recrutamento de alto tráfego), Horus Clinic (Hospital Osvaldo Cruz), AutoDB (catálogo veicular Scala+Play+ES) e Oracle FLEXCUBE (Sicredi core bancário).</p>
+    <p class="text-center text-xs text-slate-500 mt-8 lang-en">+ CIEE (5 years, high-traffic recruitment platform), Horus Clinic (Hospital Osvaldo Cruz), AutoDB (vehicle catalog in Scala+Play+ES), and Oracle FLEXCUBE (Sicredi core banking).</p>
+  </section>
+
+  <!-- ===================== SKILLS MATRIX ===================== -->
+  <section id="skills" class="bg-slate-900 border-y border-slate-800 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-pt">STACK & PROFICIÊNCIA</div>
+        <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-en">STACK & PROFICIENCY</div>
+        <h3 class="section-title tracking-tighter mt-2 lang-pt">Skills Matrix — anos e profundidade</h3>
+        <h3 class="section-title tracking-tighter mt-2 lang-en">Skills Matrix — years and depth</h3>
+        <p class="text-slate-400 mt-2 text-sm max-w-2xl mx-auto lang-pt">Auto-avaliação honesta. Onde estou sênior (●) e onde estou aprendendo (○).</p>
+        <p class="text-slate-400 mt-2 text-sm max-w-2xl mx-auto lang-en">Honest self-assessment. Where I'm senior (●) and where I'm learning (○).</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-x-12 gap-y-2">
+        <!-- LEFT COLUMN -->
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-yellow-400 mb-3">Backend / JVM</h4>
+          <div class="skill-row"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-bar-fill" style="width:100%"></div></div><span class="skill-years">20+ yrs</span></div>
+          <div class="skill-row"><span class="skill-name">Spring Boot</span><div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div><span class="skill-years">10 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">Scala</span><div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div><span class="skill-years">5 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">Kotlin</span><div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div><span class="skill-years">4 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">Quarkus</span><div class="skill-bar"><div class="skill-bar-fill" style="width:55%"></div></div><span class="skill-years">2 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">Play Framework</span><div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div><span class="skill-years">3 yrs</span></div>
+
+          <h4 class="text-xs uppercase tracking-widest text-yellow-400 mt-8 mb-3">Data & Messaging</h4>
+          <div class="skill-row"><span class="skill-name">Apache Kafka</span><div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div><span class="skill-years">8 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">Apache Flink</span><div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div><span class="skill-years">4 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">Akka</span><div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div><span class="skill-years">4 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div><span class="skill-years">10 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">MongoDB</span><div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div><span class="skill-years">5 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">Elasticsearch</span><div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div><span class="skill-years">4 yrs</span></div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-yellow-400 mb-3">Cloud & DevOps</h4>
+          <div class="skill-row"><span class="skill-name">Microsoft Azure</span><div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div><span class="skill-years">5 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div><span class="skill-years">4 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div><span class="skill-years">6 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">Kubernetes</span><div class="skill-bar"><div class="skill-bar-fill" style="width:60%"></div></div><span class="skill-years">2 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">CI/CD (Jenkins · Actions)</span><div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div><span class="skill-years">8 yrs</span></div>
+
+          <h4 class="text-xs uppercase tracking-widest text-yellow-400 mt-8 mb-3">AI-Driven Development <span class="text-slate-500 normal-case">(atual foco)</span></h4>
+          <div class="skill-row"><span class="skill-name">LangChain4j</span><div class="skill-bar"><div class="skill-bar-fill" style="width:55%"></div></div><span class="skill-years">~1 yr</span></div>
+          <div class="skill-row"><span class="skill-name">RAG · Vector DBs (Qdrant)</span><div class="skill-bar"><div class="skill-bar-fill" style="width:50%"></div></div><span class="skill-years">~1 yr</span></div>
+          <div class="skill-row"><span class="skill-name">MCP · AI Agents</span><div class="skill-bar"><div class="skill-bar-fill" style="width:45%"></div></div><span class="skill-years">~1 yr</span></div>
+          <div class="skill-row"><span class="skill-name">Claude API · ChatGPT API</span><div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div><span class="skill-years">2 yrs</span></div>
+          <div class="skill-row"><span class="skill-name">Claude Code (CLI)</span><div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div><span class="skill-years">1 yr</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TECH RADAR ===================== -->
+  <section id="radar" class="max-w-7xl mx-auto px-6 py-20">
+    <div class="text-center mb-10">
+      <div class="uppercase text-xs tracking-[2px] text-yellow-400">TECH RADAR</div>
+      <h3 class="section-title tracking-tighter mt-2 lang-pt">Onde estou investindo meu tempo</h3>
+      <h3 class="section-title tracking-tighter mt-2 lang-en">Where I'm investing my time</h3>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="radar-quad radar-adopt">
+        <div class="text-xs uppercase tracking-widest text-emerald-400 mb-2">Adopt</div>
+        <h4 class="font-semibold text-white mb-2 lang-pt">Já uso em produção</h4>
+        <h4 class="font-semibold text-white mb-2 lang-en">Already in production</h4>
+        <ul class="text-xs text-slate-300 space-y-1">
+          <li>Java 17+ · Spring Boot 3</li>
+          <li>Apache Kafka</li>
+          <li>Azure · Docker</li>
+          <li>Claude Code (CLI)</li>
+        </ul>
+      </div>
+      <div class="radar-quad radar-trial">
+        <div class="text-xs uppercase tracking-widest text-yellow-400 mb-2">Trial</div>
+        <h4 class="font-semibold text-white mb-2 lang-pt">Testando em projetos reais</h4>
+        <h4 class="font-semibold text-white mb-2 lang-en">Testing in real projects</h4>
+        <ul class="text-xs text-slate-300 space-y-1">
+          <li>LangChain4j</li>
+          <li>Qdrant / Vector DBs</li>
+          <li>Quarkus 3</li>
+          <li>Spring AI</li>
+        </ul>
+      </div>
+      <div class="radar-quad radar-assess">
+        <div class="text-xs uppercase tracking-widest text-blue-400 mb-2">Assess</div>
+        <h4 class="font-semibold text-white mb-2 lang-pt">Estudando / avaliando</h4>
+        <h4 class="font-semibold text-white mb-2 lang-en">Studying / evaluating</h4>
+        <ul class="text-xs text-slate-300 space-y-1">
+          <li>Rust</li>
+          <li>Kubernetes operators</li>
+          <li>Model Context Protocol (MCP)</li>
+          <li>Multi-agent orchestration</li>
+        </ul>
+      </div>
+      <div class="radar-quad radar-hold">
+        <div class="text-xs uppercase tracking-widest text-red-400 mb-2">Hold</div>
+        <h4 class="font-semibold text-white mb-2 lang-pt">Em pausa consciente</h4>
+        <h4 class="font-semibold text-white mb-2 lang-en">On conscious pause</h4>
+        <ul class="text-xs text-slate-300 space-y-1">
+          <li>Java EE legacy stack</li>
+          <li>Struts 1.x</li>
+          <li>WebSphere</li>
+          <li>Mobile nativo</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHAT I'M LOOKING FOR / NOT ===================== -->
+  <section id="fit" class="bg-slate-900 border-y border-slate-800 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- WHAT I'M LOOKING FOR -->
+        <div>
+          <div class="uppercase text-xs tracking-[2px] text-emerald-400 mb-3 lang-pt">BUSCANDO</div>
+          <div class="uppercase text-xs tracking-[2px] text-emerald-400 mb-3 lang-en">LOOKING FOR</div>
+          <h3 class="text-2xl font-semibold tracking-tight mb-5 lang-pt">Onde posso entregar mais valor</h3>
+          <h3 class="text-2xl font-semibold tracking-tight mb-5 lang-en">Where I can deliver most value</h3>
+
+          <ul class="space-y-3 text-sm">
+            <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Senior Java Backend</strong><span class="lang-en">Senior Java Backend</span> — Java 17+, Spring Boot 3, microsserviços</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Tech Lead</strong><span class="lang-en">Tech Lead</span> — time de 4-10 devs, code review, mentoria</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Staff Engineer (Backend Platform)</strong><span class="lang-en">Staff Engineer (Backend Platform)</span> — definindo padrões, levando times a escalar</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Modernização de legados</strong><span class="lang-en">Legacy modernization</span> — migração de monolitos para event-driven / microsserviços</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Equipes com AI em produção</strong><span class="lang-en">Teams shipping AI in production</span> — quero aplicar minha vivência com LangChain4j em algo real</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Setores:</strong> fintech, banking, retail/e-commerce, healthtech, B2B SaaS</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Modelo:</strong> CLT (BR) ou Contrato Internacional (US/EU) · Remote-first · Time zone BR/US-East</span></li>
+          </ul>
+        </div>
+
+        <!-- WHAT I'M NOT -->
+        <div>
+          <div class="uppercase text-xs tracking-[2px] text-slate-500 mb-3 lang-pt">NÃO É PRA MIM</div>
+          <div class="uppercase text-xs tracking-[2px] text-slate-500 mb-3 lang-en">NOT A FIT</div>
+          <h3 class="text-2xl font-semibold tracking-tight mb-5 lang-pt">Onde provavelmente não entrego</h3>
+          <h3 class="text-2xl font-semibold tracking-tight mb-5 lang-en">Where I'm probably not the right fit</h3>
+
+          <ul class="space-y-3 text-sm">
+            <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Vagas puramente de frontend (React/Vue/Angular)</span><span class="lang-en">Pure frontend roles (React/Vue/Angular)</span></li>
+            <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Mobile nativo (iOS/Android)</span><span class="lang-en">Native mobile (iOS/Android)</span></li>
+            <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Vagas júnior ou pleno (sem ownership de decisões técnicas)</span><span class="lang-en">Junior or mid-level roles (no technical decision ownership)</span></li>
+            <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">100% on-site fora de POA/SP (aceito viagens pontuais, não realocação)</span><span class="lang-en">100% on-site outside POA/SP (occasional travel yes, relocation no)</span></li>
+            <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Empresas sem code review, CI/CD ou qualquer engenharia</span><span class="lang-en">Companies without code review, CI/CD, or any engineering hygiene</span></li>
+            <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Data Science / ML Engineer (sou integrador, não scientist)</span><span class="lang-en">Data Science / ML Engineer (I'm an integrator, not a scientist)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OPEN SOURCE ===================== -->
+  <section id="open-source" class="max-w-7xl mx-auto px-6 py-20">
+    <div class="text-center mb-10">
+      <div class="uppercase text-xs tracking-[2px] text-yellow-400">OPEN SOURCE</div>
+      <h3 class="section-title tracking-tighter mt-2 lang-pt">Projetos para estudar (e me avaliar)</h3>
+      <h3 class="section-title tracking-tighter mt-2 lang-en">Projects to study (and evaluate me)</h3>
+      <p class="text-slate-400 mt-2 text-sm max-w-2xl mx-auto lang-pt">Tudo funcional, com README detalhado. Clone, rode, leia o código.</p>
+      <p class="text-slate-400 mt-2 text-sm max-w-2xl mx-auto lang-en">All functional, with detailed README. Clone, run, read the code.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <div class="card card-highlight p-6">
+        <div class="flex items-center gap-x-2 mb-2">
+          <span class="text-[10px] px-2 py-0.5 rounded bg-yellow-400 text-slate-950 font-semibold">DESTAQUE</span>
+          <span class="text-[10px] text-slate-500 font-mono">2026</span>
+        </div>
+        <h4 class="font-semibold text-white mb-1">springboot-langchain4j-rag-mcp</h4>
+        <p class="text-xs text-slate-400 mb-3 lang-pt">Spring Boot + LangChain4j + Qdrant (RAG persistente) + Supervisor/Sub-agentes + Spring Security + MCP. Compara modo simples vs modo agente.</p>
+        <p class="text-xs text-slate-400 mb-3 lang-en">Spring Boot + LangChain4j + Qdrant (persistent RAG) + Supervisor/Sub-agents + Spring Security + MCP. Simple mode vs agent mode.</p>
+        <div class="flex flex-wrap gap-1 mb-3">
+          <span class="tech-pill text-[10px]">Java 17</span>
+          <span class="tech-pill text-[10px]">Spring Boot 3</span>
+          <span class="tech-pill text-[10px]">LangChain4j</span>
+          <span class="tech-pill text-[10px]">Qdrant</span>
+          <span class="tech-pill text-[10px]">Agents</span>
+          <span class="tech-pill text-[10px]">Security</span>
+        </div>
+        <a href="https://github.com/ivamartins/springboot-langchain4j-rag-mcp" target="_blank" rel="noopener" class="text-xs text-yellow-400 hover:text-yellow-300">
+          <i class="fa-brands fa-github mr-1"></i> github.com/ivamartins/springboot-langchain4j-rag-mcp →
+        </a>
+      </div>
+
+      <div class="card p-6">
+        <div class="flex items-center gap-x-2 mb-2">
+          <span class="text-[10px] text-slate-500 font-mono">2025</span>
+        </div>
+        <h4 class="font-semibold text-white mb-1">whatsapp-llm-bot</h4>
+        <p class="text-xs text-slate-400 mb-3">Bot WhatsApp LLM-agnostic (qualquer API OpenAI-compatible: Grok, OpenAI, OpenRouter, Ollama). 61 testes, deploy Docker/PM2/systemd.</p>
+        <div class="flex flex-wrap gap-1 mb-3">
+          <span class="tech-pill text-[10px]">Node · Baileys</span>
+          <span class="tech-pill text-[10px]">LLM-agnostic</span>
+          <span class="tech-pill text-[10px]">61 tests</span>
+        </div>
+        <a href="https://github.com/ivamartins/whatsapp-llm-bot" target="_blank" rel="noopener" class="text-xs text-yellow-400 hover:text-yellow-300">
+          <i class="fa-brands fa-github mr-1"></i> github.com/ivamartins/whatsapp-llm-bot →
+        </a>
+      </div>
+
+      <div class="card p-6">
+        <div class="flex items-center gap-x-2 mb-2">
+          <span class="text-[10px] text-slate-500 font-mono">2024</span>
+        </div>
+        <h4 class="font-semibold text-white mb-1">quarkus-java-base</h4>
+        <p class="text-xs text-slate-400 mb-3">Base Quarkus (Java moderno) para modernização de legados. Pronto para microsserviços e integração com IA/Kafka.</p>
+        <div class="flex flex-wrap gap-1 mb-3">
+          <span class="tech-pill text-[10px]">Java 17+</span>
+          <span class="tech-pill text-[10px]">Quarkus</span>
+          <span class="tech-pill text-[10px]">REST</span>
+        </div>
+        <a href="https://github.com/ivamartins/quarkus-java-base" target="_blank" rel="noopener" class="text-xs text-yellow-400 hover:text-yellow-300">
+          <i class="fa-brands fa-github mr-1"></i> github.com/ivamartins/quarkus-java-base →
+        </a>
+      </div>
+
+      <div class="card p-6">
+        <div class="text-[10px] text-slate-500 font-mono mb-2">2024</div>
+        <h4 class="font-semibold text-white mb-1">akka-scala-base</h4>
+        <p class="text-xs text-slate-400 mb-3">Serviços resilientes com Akka Typed + HTTP. Base para clustering, persistence (event sourcing) e integrações modernas.</p>
+        <a href="https://github.com/ivamartins/akka-scala-base" target="_blank" rel="noopener" class="text-xs text-yellow-400 hover:text-yellow-300">
+          <i class="fa-brands fa-github mr-1"></i> github.com/ivamartins/akka-scala-base →
+        </a>
+      </div>
+
+      <div class="card p-6">
+        <div class="text-[10px] text-slate-500 font-mono mb-2">2024</div>
+        <h4 class="font-semibold text-white mb-1">flink-kafka-scala-base</h4>
+        <p class="text-xs text-slate-400 mb-3">Streaming event-driven com Scala + Flink + Kafka. Base para pipelines em tempo real.</p>
+        <a href="https://github.com/ivamartins/flink-kafka-scala-base" target="_blank" rel="noopener" class="text-xs text-yellow-400 hover:text-yellow-300">
+          <i class="fa-brands fa-github mr-1"></i> github.com/ivamartins/flink-kafka-scala-base →
+        </a>
+      </div>
+
+      <div class="card p-6">
+        <div class="text-[10px] text-slate-500 font-mono mb-2">2024</div>
+        <h4 class="font-semibold text-white mb-1">flink-data-mesh-pipeline</h4>
+        <p class="text-xs text-slate-400 mb-3">Pipeline Flink + Kafka implementando Data Mesh: dois data products independentes com enrichment em nível de plataforma.</p>
+        <a href="https://github.com/ivamartins/flink-data-mesh-pipeline" target="_blank" rel="noopener" class="text-xs text-yellow-400 hover:text-yellow-300">
+          <i class="fa-brands fa-github mr-1"></i> github.com/ivamartins/flink-data-mesh-pipeline →
+        </a>
+      </div>
+    </div>
+
+    <p class="text-center text-xs text-slate-500 mt-8">
+      <a href="https://github.com/ivamartins" target="_blank" rel="noopener" class="text-yellow-400 hover:text-yellow-300">Ver todos os repositórios no GitHub →</a>
+    </p>
+  </section>
+
+  <!-- ===================== EDUCATION + CERTS ===================== -->
+  <section id="education" class="bg-slate-900 border-y border-slate-800 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <div class="uppercase text-xs tracking-[2px] text-yellow-400 mb-3 lang-pt">FORMAÇÃO</div>
+          <div class="uppercase text-xs tracking-[2px] text-yellow-400 mb-3 lang-en">EDUCATION</div>
+
+          <div class="space-y-5">
+            <div>
+              <div class="font-medium text-white lang-pt">Pós-graduação — Engenharia Java Aplicada (Java Elite + IA)</div>
+              <div class="font-medium text-white lang-en">Postgraduate — Java Applied Engineering (Java Elite + AI)</div>
+              <div class="text-xs text-slate-500 lang-pt">Universidade Pitágoras Unopar Anhanguera · 2026–2027 (em andamento)</div>
+              <div class="text-xs text-slate-500 lang-en">Universidade Pitágoras Unopar Anhanguera · 2026–2027 (in progress)</div>
+              <div class="text-xs text-slate-500 mt-1 lang-pt">Foco: Java 17+, Spring Boot 3, Quarkus, microsserviços, integração de IA corporativa (LangChain4j, RAG, MCP).</div>
+              <div class="text-xs text-slate-500 mt-1 lang-en">Focus: Java 17+, Spring Boot 3, Quarkus, microservices, corporate AI integration (LangChain4j, RAG, MCP).</div>
+            </div>
+            <div>
+              <div class="font-medium text-white lang-pt">Pós-graduação — Tecnologias Aplicadas a SI com Métodos Ágeis</div>
+              <div class="font-medium text-white lang-en">Postgraduate — Technologies Applied to IS with Agile Methods</div>
+              <div class="text-xs text-slate-500">Uniritter · 2011–2013</div>
+            </div>
+            <div>
+              <div class="font-medium text-white lang-pt">Tecnólogo — Análise e Desenvolvimento de Software</div>
+              <div class="font-medium text-white lang-en">Technologist — Systems Analysis and Development</div>
+              <div class="text-xs text-slate-500">Universidade Luterana do Brasil (ULBRA) · 2005–2011</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="uppercase text-xs tracking-[2px] text-yellow-400 mb-3">CERTIFICATIONS</div>
+          <ul class="space-y-2 text-sm text-slate-300 list-none">
+            <li class="flex gap-2"><i class="fa-solid fa-certificate text-yellow-400 mt-1"></i> Professional Scrum Master I (PSM I) — Scrum.org</li>
+            <li class="flex gap-2"><i class="fa-solid fa-certificate text-yellow-400 mt-1"></i> Oracle Certified Associate, Java SE 5 / SE 6</li>
+            <li class="flex gap-2"><i class="fa-solid fa-certificate text-yellow-400 mt-1"></i> Java EE 6 Web Services Developer</li>
+            <li class="flex gap-2"><i class="fa-solid fa-certificate text-yellow-400 mt-1"></i> Java EE 6 Java Persistence API</li>
+            <li class="flex gap-2"><i class="fa-solid fa-certificate text-yellow-400 mt-1"></i> Java EE 5 Business Component Developer</li>
+            <li class="flex gap-2"><i class="fa-solid fa-certificate text-yellow-400 mt-1"></i> Java EE 5 Web Component Developer</li>
+            <li class="flex gap-2"><i class="fa-solid fa-certificate text-yellow-400 mt-1"></i> Java SE 5 Programmer</li>
+          </ul>
+          <p class="text-xs text-slate-500 mt-4 lang-pt">Certificações Java EE são históricas (2008-2010); mantidas como prova de fundamentos sólidos em enterprise Java.</p>
+          <p class="text-xs text-slate-500 mt-1 lang-en">Java EE certifications are historical (2008-2010); kept as proof of solid enterprise Java foundations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contato" class="max-w-3xl mx-auto px-6 py-20">
+    <div class="text-center mb-10">
+      <div class="text-yellow-400 text-xs tracking-[2px] lang-pt">PRÓXIMO PASSO</div>
+      <div class="text-yellow-400 text-xs tracking-[2px] lang-en">NEXT STEP</div>
+      <h3 class="section-title tracking-tighter mt-2 lang-pt">Vamos conversar sobre a vaga?</h3>
+      <h3 class="section-title tracking-tighter mt-2 lang-en">Let's talk about the role?</h3>
+      <p class="text-slate-400 mt-3 lang-pt">Respondo mensagens em até 24h. Prefiro escopos bem definidos com impacto claro.</p>
+      <p class="text-slate-400 mt-3 lang-en">I reply within 24h. I prefer well-defined scopes with clear impact.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-3">
+      <a href="mailto:ivamartins@gmail.com"
+         class="flex items-center justify-center gap-x-3 px-6 h-14 rounded-2xl bg-yellow-400 text-slate-950 font-semibold hover:bg-yellow-300 transition">
+        <i class="fa-solid fa-envelope text-xl"></i>
+        <div class="text-left">
+          <div class="text-xs text-slate-700 font-normal">Email</div>
+          <div>ivamartins@gmail.com</div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/ivã-martins-71760b89/" target="_blank" rel="noopener"
+         class="flex items-center justify-center gap-x-3 px-6 h-14 rounded-2xl border border-blue-600 hover:bg-blue-950/30 text-blue-400 font-semibold transition">
+        <i class="fa-brands fa-linkedin text-xl"></i>
+        <div class="text-left">
+          <div class="text-xs text-slate-500 font-normal">LinkedIn</div>
+          <div>linkedin.com/in/ivã-martins-71760b89</div>
+        </div>
+      </a>
+
+      <a href="https://github.com/ivamartins" target="_blank" rel="noopener"
+         class="flex items-center justify-center gap-x-3 px-6 h-14 rounded-2xl border border-slate-700 hover:bg-slate-800 transition">
+        <i class="fa-brands fa-github text-xl"></i>
+        <div class="text-left">
+          <div class="text-xs text-slate-500 font-normal">GitHub</div>
+          <div>github.com/ivamartins</div>
+        </div>
+      </a>
+
+      <a href="https://wa.me/5551981151474" target="_blank" rel="noopener"
+         class="flex items-center justify-center gap-x-3 px-6 h-14 rounded-2xl border border-emerald-600 hover:bg-emerald-950/30 text-emerald-400 font-semibold transition">
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+        <div class="text-left">
+          <div class="text-xs text-slate-500 font-normal lang-pt">WhatsApp (BR)</div>
+          <div class="text-xs text-slate-500 font-normal lang-en">WhatsApp (BR)</div>
+          <div>+55 51 98115-1474</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Download CV -->
+    <div class="mt-8 card p-6 text-center">
+      <div class="text-xs uppercase tracking-widest text-yellow-400 mb-2">DOWNLOAD CV</div>
+      <p class="text-sm text-slate-400 mb-4 lang-pt">Versão completa do currículo, com Cover Letter, em PDF.</p>
+      <p class="text-sm text-slate-400 mb-4 lang-en">Full resume version, with cover letter, in PDF.</p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="docs/Iva_Martins_Resume_EN.pdf" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-x-2 px-5 h-11 rounded-full bg-yellow-400 text-slate-950 font-semibold hover:bg-yellow-300 transition">
+          <i class="fa-solid fa-download"></i> Resume (EN)
+        </a>
+        <a href="docs/Iva_Martins_Cover_Letter_EN.pdf" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-x-2 px-5 h-11 rounded-full border border-slate-700 hover:bg-slate-800 transition">
+          <i class="fa-solid fa-file-lines"></i> Cover Letter (EN)
+        </a>
+        <a href="docs/Iva_Martins_Curriculo_PT.pdf" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-x-2 px-5 h-11 rounded-full border border-slate-700 hover:bg-slate-800 transition">
+          <i class="fa-solid fa-file-lines"></i> Currículo (PT)
+        </a>
+        <a href="docs/Iva_Martins_Carta_Apresentacao_PT.pdf" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-x-2 px-5 h-11 rounded-full border border-slate-700 hover:bg-slate-800 transition">
+          <i class="fa-solid fa-file-lines"></i> Carta (PT)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="border-t border-slate-800 py-8 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-y-3">
+      <div>
+        <span class="lang-pt">© Ivã Martins · Porto Alegre, RS · Este é meu portfólio pessoal</span>
+        <span class="lang-en">© Ivã Martins · Porto Alegre, RS · This is my personal portfolio</span>
+      </div>
+      <div class="flex items-center gap-x-3">
+        <a href="https://github.com/ivamartins" target="_blank" rel="noopener" class="hover:text-slate-300"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ivã-martins-71760b89/" target="_blank" rel="noopener" class="hover:text-slate-300"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:ivamartins@gmail.com" class="hover:text-slate-300"><i class="fa-solid fa-envelope"></i></a>
+        <span class="text-slate-700">·</span>
+        <a href="https://ivamartins.github.io/code-solutions-site/" target="_blank" rel="noopener" class="hover:text-slate-300 lang-pt">Serviços PJ →</a>
+        <a href="https://ivamartins.github.io/code-solutions-site/" target="_blank" rel="noopener" class="hover:text-slate-300 lang-en">Hire as contractor →</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script>
+    function switchLang(lang) {
+      document.documentElement.lang = lang;
+      document.getElementById('lang-pt-btn').classList.toggle('bg-yellow-500', lang === 'pt');
+      document.getElementById('lang-pt-btn').classList.toggle('text-slate-950', lang === 'pt');
+      document.getElementById('lang-pt-btn').classList.toggle('text-slate-400', lang !== 'pt');
+      document.getElementById('lang-en-btn').classList.toggle('bg-yellow-500', lang === 'en');
+      document.getElementById('lang-en-btn').classList.toggle('text-slate-950', lang === 'en');
+      document.getElementById('lang-en-btn').classList.toggle('text-slate-400', lang !== 'en');
+      try { localStorage.setItem('lang', lang); } catch(e) {}
+    }
+
+    // Restore language
+    try {
+      const saved = localStorage.getItem('lang');
+      if (saved && saved !== 'pt') switchLang(saved);
+    } catch(e) {}
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id.length > 1) {
+          const el = document.querySelector(id);
+          if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
