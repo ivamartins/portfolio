@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <title>Ivã Martins — Senior Java Backend Engineer | Open to Senior Backend / Tech Lead opportunities (Remote, BR/US/EU)</title>
-  <meta name="description" content="Senior Java Backend Engineer with 20+ years designing, developing, and modernizing large-scale systems, high-volume APIs, microservices, and event-driven architectures. Java, Spring Boot, Scala, Kafka, Flink, Akka, Azure, AWS. AI-Driven Development (LangChain4j, RAG, MCP). Open to remote opportunities.">
+  <title>Ivã Martins — Senior Java Backend Engineer | Open to International Contractor roles (Remote, US/EU/BR)</title>
+  <meta name="description" content="Senior Java Backend Engineer (20+ years). Also hands-on with Scala + Akka and Python. Java, Spring Boot, Quarkus, Kafka, Flink, Akka, Azure, AWS. AI-Driven Development (LangChain4j, RAG, MCP). Open to international contractor (PJ) roles.">
   <meta name="author" content="Ivã Martins">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ivamartins.github.io/">
@@ -23,8 +23,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Ivã Martins — Senior Java Backend Engineer · Open to opportunities">
-  <meta property="og:description" content="20+ years building and modernizing enterprise backends. Java, Spring Boot, Scala, Kafka, Flink, Akka, Azure, AWS. AI-Driven Development. Open to remote Senior Backend / Tech Lead roles.">
+  <meta property="og:title" content="Ivã Martins — Senior Java Backend Engineer · Open to International Contractor roles">
+  <meta property="og:description" content="20+ years building and modernizing enterprise backends. Java, Spring Boot, Scala + Akka, Python, Kafka, Flink, Akka, Azure, AWS. AI-Driven Development. Open to remote International Contractor (PJ) roles (US/EU/BR).">
   <meta property="og:type" content="profile">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="pt_BR">
@@ -34,8 +34,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ivã Martins — Senior Java Backend Engineer · Open to opportunities">
-  <meta name="twitter:description" content="20+ years Java/Spring Boot/Scala/Kafka. Open to Senior Backend / Tech Lead remote roles (BR/US/EU).">
+  <meta name="twitter:title" content="Ivã Martins — Senior Java Backend Engineer · Open to International Contractor roles">
+  <meta name="twitter:description" content="20+ years Java/Spring Boot/Scala/Python/Kafka. Open to International Contractor remote roles (US/EU/BR).">
 
   <!-- Tailwind + Font Awesome -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -63,6 +63,21 @@
     .lang-en { display: none; }
     html[lang="en"] .lang-pt { display: none; }
     html[lang="en"] .lang-en { display: block; }
+
+    /* Fade-in for hero portrait to soften the first impression */
+    @keyframes portrait-fade-in {
+      0%   { opacity: 0; transform: translateY(8px) scale(0.985); filter: blur(6px); }
+      60%  { filter: blur(0); }
+      100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+    }
+    .portrait-wrap { animation: portrait-fade-in 0.9s ease-out both; }
+
+    /* Subtle "breath" on the portrait to feel less static / intense */
+    @keyframes portrait-breath {
+      0%, 100% { transform: scale(1); }
+      50%      { transform: scale(1.012); }
+    }
+    .portrait-img { animation: portrait-breath 9s ease-in-out infinite; transform-origin: center; }
 
     .nav-link { transition: color 0.2s; }
     html[lang="en"] .nav-link { color: rgb(226 232 240); }
@@ -164,7 +179,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Ivã Martins",
-    "jobTitle": "Senior Java Backend Engineer",
+    "jobTitle": "Senior Java Backend Engineer (International Contractor)",
     "url": "https://ivamartins.github.io/",
     "sameAs": [
       "https://www.linkedin.com/in/ivã-martins-71760b89",
@@ -184,11 +199,11 @@
       { "@type": "EducationalOrganization", "name": "Universidade Pitágoras Unopar Anhanguera" }
     ],
     "knowsAbout": [
-      "Java", "Spring Boot", "Scala", "Apache Kafka", "Apache Flink", "Akka",
+      "Java", "Spring Boot", "Scala", "Akka", "Python", "Apache Kafka", "Apache Flink",
       "Microsoft Azure", "AWS", "Microservices", "Event-Driven Architecture",
-      "LangChain4j", "RAG", "MCP", "AI Agents", "Distributed Systems"
+      "LangChain4j", "RAG", "MCP", "AI Agents", "Distributed Systems", "Legacy Modernization"
     ],
-    "worksFor": { "@type": "Organization", "name": "Open to opportunities" }
+    "worksFor": { "@type": "Organization", "name": "Open to international contractor opportunities" }
   }
   </script>
 </head>
@@ -245,8 +260,8 @@
           <!-- Status badge -->
           <div class="inline-flex items-center gap-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs tracking-[1px] mb-6">
             <div class="w-2 h-2 bg-emerald-400 rounded-full pulse-ring"></div>
-            <span class="text-emerald-300 lang-pt">DISPONÍVEL PARA OPORTUNIDADES REMOTAS — SÊNIOR / TECH LEAD</span>
-            <span class="text-emerald-300 lang-en">OPEN TO REMOTE OPPORTUNITIES — SENIOR / TECH LEAD</span>
+            <span class="text-emerald-300 lang-pt">DISPONÍVEL PARA OPORTUNIDADES REMOTAS — SÊNIOR BACKEND (PJ / INTERNATIONAL CONTRACTOR)</span>
+            <span class="text-emerald-300 lang-en">OPEN TO REMOTE OPPORTUNITIES — SENIOR BACKEND (INTERNATIONAL CONTRACTOR)</span>
           </div>
 
           <h1 class="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tighter font-semibold mb-6">
@@ -255,8 +270,8 @@
           </h1>
 
           <p class="max-w-2xl text-lg md:text-xl text-slate-400 mb-8 leading-relaxed">
-            <span class="lang-pt"><strong class="text-white">Senior Java Backend Engineer</strong> com profundidade real em microsserviços, arquiteturas event-driven, cloud (Azure/AWS) e modernização de legados. Atualmente focado em <strong class="text-white">AI-Driven Development</strong> com LangChain4j, RAG e agentes.</span>
-            <span class="lang-en"><strong class="text-white">Senior Java Backend Engineer</strong> with real depth in microservices, event-driven architectures, cloud (Azure/AWS), and legacy modernization. Currently focused on <strong class="text-white">AI-Driven Development</strong> with LangChain4j, RAG, and agents.</span>
+            <span class="lang-pt"><strong class="text-white">Senior Java Backend Engineer</strong> com profundidade real em microsserviços, arquiteturas event-driven, cloud (Azure/AWS) e modernização de legados. Também atuo com <strong class="text-white">Scala + Akka</strong> (streaming no Sicredi) e <strong class="text-white">Python</strong> (data e APIs no Quartile). Hoje focado em <strong class="text-white">AI-Driven Development</strong> com LangChain4j, RAG e agentes.</span>
+            <span class="lang-en"><strong class="text-white">Senior Java Backend Engineer</strong> with real depth in microservices, event-driven architectures, cloud (Azure/AWS), and legacy modernization. Also hands-on with <strong class="text-white">Scala + Akka</strong> (streaming at Sicredi) and <strong class="text-white">Python</strong> (data and APIs at Quartile). Currently focused on <strong class="text-white">AI-Driven Development</strong> with LangChain4j, RAG, and agents.</span>
           </p>
 
           <!-- CTAs -->
@@ -307,14 +322,17 @@
           </div>
         </div>
 
-        <!-- Right: portrait -->
+        <!-- Right: portrait (softened — square crop, smaller, fade-in) -->
         <div class="md:col-span-5 relative">
-          <div class="aspect-[4/5] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl shadow-black/40">
-            <img src="assets/portrait.jpg" alt="Ivã Martins — Senior Java Backend Engineer" class="w-full h-full object-cover">
+          <div class="max-w-sm mx-auto md:max-w-none">
+            <div class="aspect-square portrait-wrap rounded-3xl overflow-hidden border border-slate-800 shadow-2xl shadow-black/40 bg-slate-900">
+              <img src="assets/portrait.jpg" alt="Ivã Martins — Senior Java Backend Engineer"
+                   class="portrait-img w-full h-full object-cover object-[center_35%] saturate-[0.92] contrast-[0.96]">
+            </div>
           </div>
 
           <!-- Floating card: location -->
-          <div class="absolute -bottom-4 -left-4 bg-slate-900 border border-slate-700 rounded-2xl px-5 py-3 text-sm shadow-xl hidden md:block">
+          <div class="absolute -bottom-4 -left-2 md:-left-6 bg-slate-900 border border-slate-700 rounded-2xl px-4 py-2.5 text-sm shadow-xl hidden md:block">
             <div class="flex items-center gap-x-3">
               <div class="text-yellow-400"><i class="fa-solid fa-location-dot fa-lg"></i></div>
               <div>
@@ -326,12 +344,11 @@
           </div>
 
           <!-- Floating card: notice -->
-          <div class="absolute -top-4 -right-4 bg-slate-900 border border-slate-700 rounded-2xl px-5 py-3 text-sm shadow-xl hidden md:block">
+          <div class="absolute -top-4 -right-2 md:-right-6 bg-slate-900 border border-slate-700 rounded-2xl px-4 py-2.5 text-sm shadow-xl hidden md:block">
             <div class="flex items-center gap-x-3">
               <div class="text-emerald-400"><i class="fa-solid fa-clock fa-lg"></i></div>
               <div>
-                <div class="text-xs text-slate-400 lang-pt">Notice</div>
-                <div class="text-xs text-slate-400 lang-en">Notice</div>
+                <div class="text-xs text-slate-400">Notice</div>
                 <div class="font-medium lang-pt">30 dias</div>
                 <div class="font-medium lang-en">30 days</div>
               </div>
@@ -387,10 +404,10 @@
         </p>
 
         <p class="lang-pt">
-          Hoje estou expandindo meu foco em <strong class="text-white">AI-Driven Development</strong> através do uso prático de ferramentas de IA e de uma pós-graduação em <strong class="text-white">Engenharia Java aplicada à IA</strong> (LangChain4j, RAG, MCP, agentes). Busco oportunidades sênior em Java backend com potencial de crescimento para Tech Lead.
+          Hoje estou expandindo meu foco em <strong class="text-white">AI-Driven Development</strong> através do uso prático de ferramentas de IA e de uma pós-graduação em <strong class="text-white">Engenharia Java aplicada à IA</strong> (LangChain4j, RAG, MCP, agentes). Busco oportunidades <strong class="text-white">sênior em Java backend como internacional contractor (PJ)</strong>, com abertura para crescer em direção a Tech Lead.
         </p>
         <p class="lang-en">
-          Today I'm expanding my focus into <strong class="text-white">AI-Driven Development</strong> through hands-on use of AI tools and a postgraduate program in <strong class="text-white">Java Engineering applied to AI</strong> (LangChain4j, RAG, MCP, agents). I'm looking for senior Java backend roles with growth potential toward Tech Lead.
+          Today I'm expanding my focus into <strong class="text-white">AI-Driven Development</strong> through hands-on use of AI tools and a postgraduate program in <strong class="text-white">Java Engineering applied to AI</strong> (LangChain4j, RAG, MCP, agents). I'm looking for <strong class="text-white">senior Java backend roles as an international contractor (PJ)</strong>, with openness to grow toward a Tech Lead track.
         </p>
 
         <div class="pt-4 border-t border-slate-800">
@@ -404,8 +421,8 @@
             <div>
               <div class="text-slate-500 text-xs uppercase tracking-wider mb-1 lang-pt">Modelo</div>
               <div class="text-slate-500 text-xs uppercase tracking-wider mb-1 lang-en">Engagement</div>
-              <div class="text-white font-medium lang-pt">CLT ou Contrato (PJ)</div>
-              <div class="text-white font-medium lang-en">Full-time or Contract (PJ)</div>
+              <div class="text-white font-medium lang-pt">Contrato Internacional (PJ) · Remote</div>
+              <div class="text-white font-medium lang-en">International Contractor (PJ) · Remote</div>
             </div>
             <div>
               <div class="text-slate-500 text-xs uppercase tracking-wider mb-1 lang-pt">Localização</div>
@@ -586,6 +603,85 @@
     <p class="text-center text-xs text-slate-500 mt-8 lang-en">+ CIEE (5 years, high-traffic recruitment platform), Horus Clinic (Hospital Osvaldo Cruz), AutoDB (vehicle catalog in Scala+Play+ES), and Oracle FLEXCUBE (Sicredi core banking).</p>
   </section>
 
+  <!-- ===================== BEYOND JAVA: SCALA + PYTHON ===================== -->
+  <section id="beyond-java" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="text-center mb-10">
+      <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-pt">ALÉM DO JAVA</div>
+      <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-en">BEYOND JAVA</div>
+      <h3 class="section-title tracking-tighter mt-2 lang-pt">Scala e Python no mesmo nível de profundidade</h3>
+      <h3 class="section-title tracking-tighter mt-2 lang-en">Scala and Python at the same depth</h3>
+      <p class="text-slate-400 mt-2 text-sm max-w-2xl mx-auto lang-pt">Não é só Java. Scala no Sicredi virou padrão de plataforma; Python no Quartile é parte do meu dia a dia.</p>
+      <p class="text-slate-400 mt-2 text-sm max-w-2xl mx-auto lang-en">Not just Java. Scala at Sicredi became a platform standard; Python at Quartile is part of my day-to-day.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- SCALA CARD -->
+      <div class="card card-highlight p-7">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-x-3">
+            <div class="w-11 h-11 rounded-2xl bg-red-500/10 text-red-400 flex items-center justify-center">
+              <i class="fa-solid fa-water fa-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white text-xl">Scala · Akka · Flink</h4>
+              <div class="text-xs text-slate-500 font-mono">5+ anos · Sicredi (produção)</div>
+            </div>
+          </div>
+          <span class="text-[10px] px-2 py-0.5 rounded bg-red-500/10 text-red-400 font-mono">2017—2021</span>
+        </div>
+        <p class="text-sm text-slate-300 mb-4 lang-pt">Liderei a evolução de um POC em Python para a <strong class="text-white">arquitetura event-driven que virou referência</strong> no Sicredi Digital. Scala 2.12 + Akka Typed + Apache Flink + Kafka + MongoDB — processamento financeiro em tempo real com integridade forte.</p>
+        <p class="text-sm text-slate-300 mb-4 lang-en">I led the evolution of a Python POC into the <strong class="text-white">event-driven architecture that became the reference</strong> for Sicredi Digital. Scala 2.12 + Akka Typed + Apache Flink + Kafka + MongoDB — real-time financial processing with strong integrity.</p>
+        <ul class="text-sm text-slate-300 space-y-2 mb-5">
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Akka Typed, clustering, event-sourced persistence, backpressure supervision</span><span class="lang-en">Akka Typed, clustering, event-sourced persistence, backpressure supervision</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Apache Flink para pipelines em tempo real (PFM do Sicredi)</span><span class="lang-en">Apache Flink for real-time pipelines (Sicredi PFM)</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">AutoDB: 2 versões, Scala + Play Framework + Elasticsearch (catálogo veicular)</span><span class="lang-en">AutoDB: 2 versions, Scala + Play Framework + Elasticsearch (vehicle catalog)</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Base open source: <a class="text-yellow-400 hover:underline" href="https://github.com/ivamartins/akka-scala-base" target="_blank" rel="noopener">akka-scala-base</a> · <a class="text-yellow-400 hover:underline" href="https://github.com/ivamartins/flink-kafka-scala-base" target="_blank" rel="noopener">flink-kafka-scala-base</a> · <a class="text-yellow-400 hover:underline" href="https://github.com/ivamartins/flink-data-mesh-pipeline" target="_blank" rel="noopener">flink-data-mesh-pipeline</a></span><span class="lang-en">Open source bases: <a class="text-yellow-400 hover:underline" href="https://github.com/ivamartins/akka-scala-base" target="_blank" rel="noopener">akka-scala-base</a> · <a class="text-yellow-400 hover:underline" href="https://github.com/ivamartins/flink-kafka-scala-base" target="_blank" rel="noopener">flink-kafka-scala-base</a> · <a class="text-yellow-400 hover:underline" href="https://github.com/ivamartins/flink-data-mesh-pipeline" target="_blank" rel="noopener">flink-data-mesh-pipeline</a></span></li>
+        </ul>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="tech-pill text-[10px]">Scala 2.12</span>
+          <span class="tech-pill text-[10px]">Akka Typed</span>
+          <span class="tech-pill text-[10px]">Apache Flink</span>
+          <span class="tech-pill text-[10px]">Apache Kafka</span>
+          <span class="tech-pill text-[10px]">Play Framework</span>
+          <span class="tech-pill text-[10px]">MongoDB</span>
+        </div>
+      </div>
+
+      <!-- PYTHON CARD -->
+      <div class="card card-highlight p-7">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-x-3">
+            <div class="w-11 h-11 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center">
+              <i class="fa-brands fa-python fa-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white text-xl">Python · Data · APIs</h4>
+              <div class="text-xs text-slate-500 font-mono">5+ anos · Sicredi + Quartile (produção)</div>
+            </div>
+          </div>
+          <span class="text-[10px] px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 font-mono">2021—2026</span>
+        </div>
+        <p class="text-sm text-slate-300 mb-4 lang-pt">Python é parte do meu dia a dia desde o PFM crawler no Sicredi até os backends de alto volume do <strong class="text-white">Quartile (US, Azure Functions)</strong>. APIs com FastAPI, Pydantic, pandas para automações e dados.</p>
+        <p class="text-sm text-slate-300 mb-4 lang-en">Python has been part of my day-to-day since the PFM crawler at Sicredi up to the high-volume backends at <strong class="text-white">Quartile (US, Azure Functions)</strong>. APIs with FastAPI, Pydantic, pandas for automations and data.</p>
+        <ul class="text-sm text-slate-300 space-y-2 mb-5">
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Azure Functions em Python (Quartile): ad optimization, labeling, product generation</span><span class="lang-en">Azure Functions in Python (Quartile): ad optimization, labeling, product generation</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">FastAPI + Pydantic para integrações assíncronas com Azure Service Bus</span><span class="lang-en">FastAPI + Pydantic for async integrations with Azure Service Bus</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">pandas para automação de relatórios e pipelines de dados</span><span class="lang-en">pandas for reporting automation and data pipelines</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">▸</span><span class="lang-pt">Crawler PFM em Python 3.x que originou a arquitetura event-driven no Sicredi</span><span class="lang-en">PFM crawler in Python 3.x that originated Sicredi's event-driven architecture</span></li>
+        </ul>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="tech-pill text-[10px]">Python 3.x</span>
+          <span class="tech-pill text-[10px]">FastAPI</span>
+          <span class="tech-pill text-[10px]">Pydantic</span>
+          <span class="tech-pill text-[10px]">pandas</span>
+          <span class="tech-pill text-[10px]">Azure Functions</span>
+          <span class="tech-pill text-[10px]">Service Bus</span>
+          <span class="tech-pill text-[10px]">OpenAPI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== SKILLS MATRIX ===================== -->
   <section id="skills" class="bg-slate-900 border-y border-slate-800 py-20">
     <div class="max-w-7xl mx-auto px-6">
@@ -638,57 +734,72 @@
     </div>
   </section>
 
-  <!-- ===================== TECH RADAR ===================== -->
+  <!-- ===================== CURRENT FOCUS ===================== -->
   <section id="radar" class="max-w-7xl mx-auto px-6 py-20">
     <div class="text-center mb-10">
-      <div class="uppercase text-xs tracking-[2px] text-yellow-400">TECH RADAR</div>
-      <h3 class="section-title tracking-tighter mt-2 lang-pt">Onde estou investindo meu tempo</h3>
-      <h3 class="section-title tracking-tighter mt-2 lang-en">Where I'm investing my time</h3>
+      <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-pt">FOCO ATUAL</div>
+      <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-en">CURRENT FOCUS</div>
+      <h3 class="section-title tracking-tighter mt-2 lang-pt">Onde estou colocando meu tempo agora</h3>
+      <h3 class="section-title tracking-tighter mt-2 lang-en">Where I'm putting my time right now</h3>
+      <p class="text-slate-400 mt-2 text-sm max-w-2xl mx-auto lang-pt">Mapa honesto do que estou aprofundando, do foco principal em 2026 e do que vem depois.</p>
+      <p class="text-slate-400 mt-2 text-sm max-w-2xl mx-auto lang-en">An honest map of what I'm deepening, the 2026 main focus, and what's next.</p>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="grid md:grid-cols-2 gap-4">
+      <!-- Main stack -->
       <div class="radar-quad radar-adopt">
-        <div class="text-xs uppercase tracking-widest text-emerald-400 mb-2">Adopt</div>
-        <h4 class="font-semibold text-white mb-2 lang-pt">Já uso em produção</h4>
-        <h4 class="font-semibold text-white mb-2 lang-en">Already in production</h4>
+        <div class="text-xs uppercase tracking-widest text-emerald-400 mb-2 lang-pt">STACK PRINCIPAL · APROFUNDANDO</div>
+        <div class="text-xs uppercase tracking-widest text-emerald-400 mb-2 lang-en">MAIN STACK · DEEPENING</div>
+        <h4 class="font-semibold text-white mb-2 lang-pt">Java moderno + Cloud + Python</h4>
+        <h4 class="font-semibold text-white mb-2 lang-en">Modern Java + Cloud + Python</h4>
         <ul class="text-xs text-slate-300 space-y-1">
-          <li>Java 17+ · Spring Boot 3</li>
-          <li>Apache Kafka</li>
-          <li>Azure · Docker</li>
-          <li>Claude Code (CLI)</li>
+          <li>Java 17+ · Spring Boot 3 · Quarkus</li>
+          <li>Apache Kafka · Azure · AWS · Docker</li>
+          <li>Python · FastAPI · pandas (uso diário no Quartile)</li>
+          <li>Claude Code (CLI) como acelerador de engenharia</li>
         </ul>
       </div>
+
+      <!-- AI-Driven Development (current focus) -->
       <div class="radar-quad radar-trial">
-        <div class="text-xs uppercase tracking-widest text-yellow-400 mb-2">Trial</div>
-        <h4 class="font-semibold text-white mb-2 lang-pt">Testando em projetos reais</h4>
-        <h4 class="font-semibold text-white mb-2 lang-en">Testing in real projects</h4>
+        <div class="text-xs uppercase tracking-widest text-yellow-400 mb-2 lang-pt">FOCO 2026 · AI-DRIVEN DEVELOPMENT</div>
+        <div class="text-xs uppercase tracking-widest text-yellow-400 mb-2 lang-en">2026 FOCUS · AI-DRIVEN DEVELOPMENT</div>
+        <h4 class="font-semibold text-white mb-2 lang-pt">Pós-graduação + projetos reais em produção</h4>
+        <h4 class="font-semibold text-white mb-2 lang-en">Postgraduate + real production projects</h4>
         <ul class="text-xs text-slate-300 space-y-1">
-          <li>LangChain4j</li>
-          <li>Qdrant / Vector DBs</li>
-          <li>Quarkus 3</li>
-          <li>Spring AI</li>
-        </ul>
-      </div>
-      <div class="radar-quad radar-assess">
-        <div class="text-xs uppercase tracking-widest text-blue-400 mb-2">Assess</div>
-        <h4 class="font-semibold text-white mb-2 lang-pt">Estudando / avaliando</h4>
-        <h4 class="font-semibold text-white mb-2 lang-en">Studying / evaluating</h4>
-        <ul class="text-xs text-slate-300 space-y-1">
-          <li>Rust</li>
-          <li>Kubernetes operators</li>
+          <li>LangChain4j · Spring AI</li>
+          <li>RAG com Qdrant (vector DB) e embeddings</li>
           <li>Model Context Protocol (MCP)</li>
-          <li>Multi-agent orchestration</li>
+          <li>AI Agents · supervisor / sub-agent patterns</li>
+          <li>Pós em Java Elite + IA (Unopar Anhanguera, 2026–2027)</li>
         </ul>
       </div>
-      <div class="radar-quad radar-hold">
-        <div class="text-xs uppercase tracking-widest text-red-400 mb-2">Hold</div>
-        <h4 class="font-semibold text-white mb-2 lang-pt">Em pausa consciente</h4>
-        <h4 class="font-semibold text-white mb-2 lang-en">On conscious pause</h4>
+
+      <!-- Event-driven (deep production) -->
+      <div class="radar-quad radar-assess">
+        <div class="text-xs uppercase tracking-widest text-blue-400 mb-2 lang-pt">EVENT-DRIVEN · 5+ ANOS EM PRODUÇÃO</div>
+        <div class="text-xs uppercase tracking-widest text-blue-400 mb-2 lang-en">EVENT-DRIVEN · 5+ YEARS IN PRODUCTION</div>
+        <h4 class="font-semibold text-white mb-2 lang-pt">Scala + Akka + Flink (Sicredi)</h4>
+        <h4 class="font-semibold text-white mb-2 lang-en">Scala + Akka + Flink (Sicredi)</h4>
         <ul class="text-xs text-slate-300 space-y-1">
-          <li>Java EE legacy stack</li>
-          <li>Struts 1.x</li>
-          <li>WebSphere</li>
-          <li>Mobile nativo</li>
+          <li>Scala 2.12 · Akka Typed · Play Framework</li>
+          <li>Apache Flink · pipelines em tempo real</li>
+          <li>Kafka · MongoDB · event-driven patterns</li>
+          <li>Manutenção ativa via repos open source (akka-scala-base, flink-kafka-scala-base, flink-data-mesh-pipeline)</li>
+        </ul>
+      </div>
+
+      <!-- Exploring (next) -->
+      <div class="radar-quad radar-hold">
+        <div class="text-xs uppercase tracking-widest text-red-400 mb-2 lang-pt">EXPLORANDO · PRÓXIMOS PASSOS</div>
+        <div class="text-xs uppercase tracking-widest text-red-400 mb-2 lang-en">EXPLORING · WHAT'S NEXT</div>
+        <h4 class="font-semibold text-white mb-2 lang-pt">Novas frentes, sem pressa</h4>
+        <h4 class="font-semibold text-white mb-2 lang-en">New fronts, no rush</h4>
+        <ul class="text-xs text-slate-300 space-y-1">
+          <li>Rust (estudos pessoais, sem uso profissional ainda)</li>
+          <li>Kubernetes operators · GitOps</li>
+          <li>Multi-agent orchestration avançada</li>
+          <li>Elixir / OTP (interesse em modelos de atores além do Akka)</li>
         </ul>
       </div>
     </div>
@@ -707,12 +818,12 @@
 
           <ul class="space-y-3 text-sm">
             <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Senior Java Backend</strong><span class="lang-en">Senior Java Backend</span> — Java 17+, Spring Boot 3, microsserviços</span></li>
-            <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Tech Lead</strong><span class="lang-en">Tech Lead</span> — time de 4-10 devs, code review, mentoria</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Tech Lead (caminho natural)</strong><span class="lang-en">Tech Lead track</span> — times de 4-10 devs, code review, mentoria (já liderei pivot arquitetural no Sicredi e Scrum no Panvel)</span></li>
             <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Staff Engineer (Backend Platform)</strong><span class="lang-en">Staff Engineer (Backend Platform)</span> — definindo padrões, levando times a escalar</span></li>
             <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Modernização de legados</strong><span class="lang-en">Legacy modernization</span> — migração de monolitos para event-driven / microsserviços</span></li>
             <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Equipes com AI em produção</strong><span class="lang-en">Teams shipping AI in production</span> — quero aplicar minha vivência com LangChain4j em algo real</span></li>
             <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Setores:</strong> fintech, banking, retail/e-commerce, healthtech, B2B SaaS</span></li>
-            <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Modelo:</strong> CLT (BR) ou Contrato Internacional (US/EU) · Remote-first · Time zone BR/US-East</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">✓</span><span><strong class="text-white lang-pt">Modelo:</strong> Contrato Internacional (US/EU) · Remote-first · Time zone BR / US-East (UTC-3)</span></li>
           </ul>
         </div>
 
@@ -727,8 +838,9 @@
             <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Vagas puramente de frontend (React/Vue/Angular)</span><span class="lang-en">Pure frontend roles (React/Vue/Angular)</span></li>
             <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Mobile nativo (iOS/Android)</span><span class="lang-en">Native mobile (iOS/Android)</span></li>
             <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Vagas júnior ou pleno (sem ownership de decisões técnicas)</span><span class="lang-en">Junior or mid-level roles (no technical decision ownership)</span></li>
-            <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">100% on-site fora de POA/SP (aceito viagens pontuais, não realocação)</span><span class="lang-en">100% on-site outside POA/SP (occasional travel yes, relocation no)</span></li>
-            <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Empresas sem code review, CI/CD ou qualquer engenharia</span><span class="lang-en">Companies without code review, CI/CD, or any engineering hygiene</span></li>
+            <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Vagas CLT no Brasil (aceito apenas contrato internacional PJ)</span><span class="lang-en">Brazilian CLT roles (I only accept international contractor / PJ engagements)</span></li>
+            <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Relocação on-site (remote-first; não me mudo)</span><span class="lang-en">On-site relocation (remote-first; I don't relocate)</span></li>
+            <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Empresas sem code review, CI/CD ou qualquer hygiene de engenharia</span><span class="lang-en">Companies without code review, CI/CD, or any engineering hygiene</span></li>
             <li class="flex gap-3"><span class="text-slate-500 mt-0.5">✗</span><span class="lang-pt">Data Science / ML Engineer (sou integrador, não scientist)</span><span class="lang-en">Data Science / ML Engineer (I'm an integrator, not a scientist)</span></li>
           </ul>
         </div>
@@ -978,33 +1090,72 @@
 
   <!-- ===================== SCRIPTS ===================== -->
   <script>
-    function switchLang(lang) {
+    let currentLang = 'pt';
+
+    function applyLang(lang) {
+      if (lang !== 'pt' && lang !== 'en') return;
+      currentLang = lang;
       document.documentElement.lang = lang;
-      document.getElementById('lang-pt-btn').classList.toggle('bg-yellow-500', lang === 'pt');
-      document.getElementById('lang-pt-btn').classList.toggle('text-slate-950', lang === 'pt');
-      document.getElementById('lang-pt-btn').classList.toggle('text-slate-400', lang !== 'pt');
-      document.getElementById('lang-en-btn').classList.toggle('bg-yellow-500', lang === 'en');
-      document.getElementById('lang-en-btn').classList.toggle('text-slate-950', lang === 'en');
-      document.getElementById('lang-en-btn').classList.toggle('text-slate-400', lang !== 'en');
-      try { localStorage.setItem('lang', lang); } catch(e) {}
+
+      const ptBtn = document.getElementById('lang-pt-btn');
+      const enBtn = document.getElementById('lang-en-btn');
+      if (!ptBtn || !enBtn) return;
+
+      if (lang === 'pt') {
+        ptBtn.classList.add('bg-yellow-500', 'text-slate-950');
+        ptBtn.classList.remove('text-slate-400');
+        enBtn.classList.remove('bg-yellow-500', 'text-slate-950');
+        enBtn.classList.add('text-slate-400');
+      } else {
+        enBtn.classList.add('bg-yellow-500', 'text-slate-950');
+        enBtn.classList.remove('text-slate-400');
+        ptBtn.classList.remove('bg-yellow-500', 'text-slate-950');
+        ptBtn.classList.add('text-slate-400');
+      }
     }
 
-    // Restore language
-    try {
-      const saved = localStorage.getItem('lang');
-      if (saved && saved !== 'pt') switchLang(saved);
-    } catch(e) {}
+    function switchLang(lang) {
+      applyLang(lang);
+      // Persist only on explicit user choice
+      try { localStorage.setItem('ivamartins_portfolio_lang', lang); } catch(e) {}
+    }
+
+    // Auto-detect language:
+    // 1. Respect saved user preference (from button clicks)
+    // 2. Otherwise detect from browser/OS language
+    // 3. Note: we do NOT save auto-detected value, so re-detects on next visit
+    function initLang() {
+      let saved = null;
+      try { saved = localStorage.getItem('ivamartins_portfolio_lang'); } catch(e) {}
+      if (saved === 'pt' || saved === 'en') {
+        applyLang(saved);
+        return;
+      }
+
+      const navLang = ((navigator.languages && navigator.languages[0])
+                       || navigator.language
+                       || navigator.userLanguage
+                       || 'pt').toLowerCase();
+      const autoLang = navLang.startsWith('pt') ? 'pt' : 'en';
+      applyLang(autoLang);
+    }
 
     // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const id = a.getAttribute('href');
-        if (id.length > 1) {
-          const el = document.querySelector(id);
-          if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
-        }
+    function setupSmoothScroll() {
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const id = a.getAttribute('href');
+          if (id.length > 1) {
+            const el = document.querySelector(id);
+            if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+          }
+        });
       });
-    });
+    }
+
+    // Boot
+    initLang();
+    setupSmoothScroll();
   </script>
 
 </body>
