@@ -1,2 +1,11 @@
 User-agent: *
 Allow: /
+
+# Sitemap for search engines
+Sitemap: https://ivamartins.github.io/sitemap.xml
+
+# Ivã Martins - Senior Java Backend Engineer
+# Portfolio for international contractor roles (PJ) - Remote, US/EU/BR
+# 20+ years of experience in Java, Spring Boot, Quarkus, Scala, Akka, Kafka, Flink, Python, Azure, AWS
+# AI-Driven Development: LangChain4j, RAG, MCP
+# Background: Sicredi, Panvel, Quartile (US)
